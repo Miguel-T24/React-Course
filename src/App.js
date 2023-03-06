@@ -1,6 +1,7 @@
 import React from "react"
 import logo from './logo.svg';
 import Componente from "./components/Component"
+import Propiedades from "./components/Properties"
 import './App.css';
 
 function App() {
@@ -24,6 +25,24 @@ function App() {
       <section>
         <Componente msg = "Hola I'm a Class Component"/>
         <Componente msg = "Hola I'm a Functional"/>
+      </section>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <section>
+        <Propiedades 
+        cadena = "Esto es una cadena de texto"
+        numero = {19} 
+        booleano = {true}
+        arreglo = {[1,2,3]}
+        objeto={{nombre:'Jon', correo: "jonmircha@gmail.com "}}
+        funciones = {(num) => num * num}
+        elementoReact = {<i>Esto es un elemento React</i>}
+        componenteReact = {<Componente msg = "Soy un componente pasado como prop"/>}
+        />
       </section>
 
     </div>
